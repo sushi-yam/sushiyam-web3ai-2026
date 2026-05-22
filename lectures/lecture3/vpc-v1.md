@@ -1,6 +1,6 @@
 # VPC v1 — sushi yam / web3 概論 2026 lecture3
 
-![VPC v1](./assets/vpc-v1.png)
+![VPC v1](../../assets/vpc-v1.png)
 
 > Strategyzer 形式の Value Proposition Canvas を、本課題ルールに沿って v1 として確定させたもの。
 > 13 週間、毎週ここをアップデートしていく自分用キャンバス。

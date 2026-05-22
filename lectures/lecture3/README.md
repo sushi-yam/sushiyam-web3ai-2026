@@ -7,6 +7,24 @@
 
 ---
 
+## 提出メタ
+
+| 項目 | 内容 |
+|---|---|
+| Discord ID | `sushiyam` |
+| GitHub リポ | https://github.com/sushi-yam/sushiyam-web3ai-2026 |
+| 初期プロト(デプロイURL) | 任意・未デプロイ(Vercel 等に上げたらここに追記) |
+
+### 提出ステータス
+
+- [x] バグリスト(20 個 + ★ で選んだ 1 場面)
+- [x] VPC v1(`vpc-v1.md` + `assets/vpc-v1.png` 埋め込み)
+- [ ] 初期プロトをデプロイ(任意)
+- [ ] GitHub リポジトリに push
+- [ ] ポータル(第3回 課題提出欄)に GitHub URL を提出
+
+---
+
 ## コンセプト
 
 消防団のボランティア(ボランティア消防士)として **出動するとき、以前トレーニングした手順を思い出せない** 瞬間を解く。
@@ -37,7 +55,7 @@
 
 ### 2. VPC v1
 
-[`vpc-v1.md`](./vpc-v1.md) / [`assets/vpc-v1.png`](./assets/vpc-v1.png)
+[`vpc-v1.md`](./vpc-v1.md) / [`assets/vpc-v1.png`](../../assets/vpc-v1.png)
 
 バグリストから **「出動時に、過去に訓練した手順が思い出せない瞬間」(★#21)** を 1 シーンとして選び、
 Strategyzer の Value Proposition Canvas を埋めた。
@@ -53,16 +71,22 @@ Strategyzer の Value Proposition Canvas を埋めた。
 
 ## ファイル構成
 
+リポジトリ全体(lecture3 と、ルートの assets を共有):
+
 ```
-lecture3/
-├── README.md           # このファイル(Discord 共有用)
-├── bug-list.md         # バグリスト 20 個 + ★ 1 個(VPC の場面)+ 傾向の振り返り
-├── vpc-v1.md           # VPC v1 本体(★ 同士の Fit 表 含む)
+sushiyam-web3ai-2026/
+├── README.md                     # リポジトリ説明
 ├── assets/
-│   ├── vpc-v1.svg      # VPC キャンバス(編集可能なソース)
-│   └── vpc-v1.png      # VPC キャンバス(README 表示用・SVG から再生成済み)
-└── ASSIGNMENT.md       # ※ .gitignore で除外(個人作業用ブリーフ)
+│   ├── vpc-v1.png                # VPC スクショ(README / vpc-v1.md に埋め込み)
+│   └── vpc-v1.svg                # VPC キャンバス(編集可能なソース)
+└── lectures/
+    └── lecture3/
+        ├── README.md             # このファイル
+        ├── bug-list.md           # バグリスト 20 個 + ★ 1 個(VPC の場面)
+        └── vpc-v1.md             # VPC v1 本体(★ 同士の Fit 表 含む)
 ```
+
+> ※ `ASSIGNMENT.md`(個人作業用ブリーフ)は `.gitignore` で除外し、リポジトリには含めない。
 
 ---
 
