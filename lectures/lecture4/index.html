@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>カウントダウンタイマー</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>⏱ カウントダウンタイマー</h1>
+
+    <div class="display" id="display" aria-live="polite">00:00</div>
+
+    <div class="inputs">
+      <label>
+        分
+        <input type="number" id="minutes" min="0" max="99" value="5" />
+      </label>
+      <label>
+        秒
+        <input type="number" id="seconds" min="0" max="59" value="0" />
+      </label>
+    </div>
+
+    <div class="presets">
+      <button class="preset" data-min="1">1分</button>
+      <button class="preset" data-min="3">3分</button>
+      <button class="preset" data-min="5">5分</button>
+      <button class="preset" data-min="10">10分</button>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn" class="primary">スタート</button>
+      <button id="pauseBtn">一時停止</button>
+      <button id="resetBtn">リセット</button>
+    </div>
+
+    <p class="status" id="status">時間を設定してスタートを押してください</p>
+  </main>
+
+  <script src="timer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

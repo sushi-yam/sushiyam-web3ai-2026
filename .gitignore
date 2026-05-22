@@ -1,6 +1,11 @@
 # 個人作業用ブリーフ(公開しない)
 ASSIGNMENT.md
 
+# lecture1 / lecture2 は別リポ(wk01/wk02)として独立管理。
+# フォルダはここに置くが、中身はこの公開リポにはコミットしない。
+lectures/lecture1/
+lectures/lecture2/
+
 # 依存・ビルド成果物
 node_modules/
 
