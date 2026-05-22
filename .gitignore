@@ -6,6 +6,9 @@ ASSIGNMENT.md
 lectures/lecture1/
 lectures/lecture2/
 
+# lecture4 はローカルにのみ残し、GitHub には上げない
+lectures/lecture4/
+
 # 依存・ビルド成果物
 node_modules/
 
