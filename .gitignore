@@ -1,0 +1,16 @@
+# 個人作業用ブリーフ(公開しない)
+ASSIGNMENT.md
+
+# 依存・ビルド成果物
+node_modules/
+
+# エディタ / ツール設定
+.claude/
+.vscode/
+.idea/
+
+# OS / WSL junk
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+*.Zone.Identifier
