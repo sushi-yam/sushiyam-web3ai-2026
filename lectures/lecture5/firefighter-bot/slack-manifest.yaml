@@ -1,0 +1,38 @@
+display_information:
+  name: 出動リコール Bot
+  description: 消防団員の訓練リコール補助
+  background_color: "#a83232"
+features:
+  bot_user:
+    display_name: firefighter-recall
+    always_online: true
+  slash_commands:
+    - command: /firefighter-location
+      url: https://firefighter-bot.sushi-yam-jp.workers.dev/slack/commands
+      description: ロケーション(気候+地形)を選択
+      should_escape: false
+    - command: /firefighter-channel
+      url: https://firefighter-bot.sushi-yam-jp.workers.dev/slack/commands
+      description: このチャンネルを通知先にする
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - chat:write
+      - commands
+      - channels:history
+      - groups:history
+      - files:read
+      - reactions:write
+settings:
+  event_subscriptions:
+    request_url: https://firefighter-bot.sushi-yam-jp.workers.dev/slack/events
+    bot_events:
+      - message.channels
+      - message.groups
+  interactivity:
+    is_enabled: true
+    request_url: https://firefighter-bot.sushi-yam-jp.workers.dev/slack/interactions
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false

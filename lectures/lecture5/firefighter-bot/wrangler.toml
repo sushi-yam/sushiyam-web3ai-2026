@@ -1,0 +1,17 @@
+name = "firefighter-bot"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# Secrets are NOT defined here. Set them with:
+#   npx wrangler secret put SLACK_BOT_TOKEN
+#   npx wrangler secret put SLACK_SIGNING_SECRET
+#   npx wrangler secret put GEMINI_API_KEY
+# (Local dev: copy .dev.vars.example to .dev.vars and fill in values.)
+
+[[kv_namespaces]]
+binding = "RECALL_KV"
+id = "9b6b8163af924c6b97259e950f6edf1a"
+
+[triggers]
+# Seasonal recall tick — every 10 days at 09:00 UTC.
+crons = ["0 9 */10 * *"]

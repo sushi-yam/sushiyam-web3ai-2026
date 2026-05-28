@@ -1,0 +1,1 @@
+export { extractAndStore } from "./extract";
